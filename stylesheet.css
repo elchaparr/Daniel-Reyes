@@ -23,7 +23,7 @@ html
 }
 body
 {
-    background: url(assets/img/wallhave.jpg);
+    background: url(assets/img/fondo.png);
     color: var(--text-color);
 }
 section
@@ -38,7 +38,7 @@ section
     left: 0;
     width: 100%;
     padding: 2rem 10%;
-    background: url(assets/img/wallhave.jpg);
+    background: url(assets/img/fondo.png);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -240,6 +240,10 @@ span
     font-size: 24px;
     border-radius: 50%;
 }
+.iconn{
+    font-size: 18px;
+    border-radius: 80%;
+}
 .icon.bxl-html5 {
     transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
     background-color: transparent;
@@ -266,6 +270,80 @@ span
     color: #b0bc1e; 
     background-color: #ecf279;  
     box-shadow: 0 0 15px rgba(243, 245, 78, 0.9);
+}
+.icon.bxl-php {
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+}
+.icon.bxl-php:hover {
+    color: #7014bc; 
+    background-color: #8d3cd9;  
+    box-shadow: 0 0 15px rgba(156, 74, 233, 0.9);
+}
+.icon.bxl-python {
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+}
+.icon.bxl-python:hover {
+    color: #c32ec9; 
+    background-color: #f675e5;  
+    box-shadow: 0 0 15px rgba(240, 114, 208, 0.9);
+}
+.icon.fi-brands-mysql {
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+    padding: 5px;
+}
+.icon.fi-brands-mysql:hover {
+    color: #147bbc; 
+    background-color: #7e80f5;  
+    box-shadow: 0 0 15px rgba(127, 116, 228, 0.9);
+}
+.icon.bxl-visual-studio {
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+}
+.icon.bxl-visual-studio:hover {
+    color: #7914cb; 
+    background-color: #c25af2;  
+    box-shadow: 0 0 15px rgba(166, 72, 197, 0.9);
+}
+.icon.bxl-git {
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+}
+.icon.bxl-git:hover {
+    color: #c95d2e;  
+    background-color: #efc691;  
+    box-shadow: 0 0 15px rgba(219, 94, 40, 0.9); 
+}
+.icon.bxl-aws {
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+}
+.icon.bxl-aws:hover {
+    color: #c95d2e;  
+    background-color: #efc691;  
+    box-shadow: 0 0 15px rgba(219, 94, 40, 0.9); 
+}
+.icon.bxl-react {
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+}
+.icon.bxl-react:hover {
+    color: #2eb7c9;  
+    background-color: #9df5f9;  
+    box-shadow: 0 0 15px rgba(56, 243, 243, 0.9); 
+}
+.iconn.fi-brands-wordpress {
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+    padding: 3px;
+}
+.iconn.fi-brands-wordpress:hover {
+    color: #299baa; 
+    background-color: #8fbff2;  
+    box-shadow: 0 0 15px rgba(118, 169, 236, 0.9);
 }
 .habilidad-name{
     font-size: 16px;
