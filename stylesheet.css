@@ -403,3 +403,85 @@ span
         width: 100%;
     }
 }
+
+.radial-bars{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.radial-bars .radial-bar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.radial-bars .radial-bar .progress-circle{
+    stroke-width: 10;
+    stroke: black;
+    fill: transparent;
+    stroke-dashoffset: 502;
+    stroke-dasharray: 502;
+    stroke-linecap: round;
+    animation: animate 1s linear forwards;
+}
+@keyframes animate{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+
+.path{
+    stroke-width: 10;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dashoffset: 502;
+    stroke-dasharray: 502;
+    stroke-linecap: round;
+}
+.path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path12 1s 1s linear forwards;}
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 100;
+    }
+}
+@keyframes animate-path12{
+    100%{
+        stroke-dashoffset: 250;
+    }
+}
+@keyframes showtext{
+    100%{
+        opacity: 1;
+    }
+}
+.porcentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showtext 0.5 1s linear forwards;
+    opacity: 0;
+}
+.text{
+    width: 200%;
+    color: #0ef;
+    position: absolute;
+    text-align: right;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: 500;
+    animation: showtext 0.5 1s linear forwards;
+}
