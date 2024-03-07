@@ -345,6 +345,16 @@ span
     background-color: #8fbff2;  
     box-shadow: 0 0 15px rgba(118, 169, 236, 0.9);
 }
+.iconn.fi-brands-xd {
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+    padding: 3px;
+}
+.iconn.fi-brands-xd:hover {
+    color: #801074; 
+    background-color: #b030b9;  
+    box-shadow: 0 0 15px rgba(120, 30, 150, 0.9);
+}
 .habilidad-name{
     font-size: 16px;
     font-weight: 600;
