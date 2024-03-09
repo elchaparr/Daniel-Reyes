@@ -240,6 +240,11 @@ span
     font-size: 24px;
     border-radius: 50%;
 }
+.iconc {
+    font-size: 24px;
+    border-radius: 1%;
+}
+
 .iconn{
     font-size: 18px;
     border-radius: 80%;
@@ -262,11 +267,11 @@ span
     background-color: #79b5f2;  
     box-shadow: 0 0 15px rgba(51, 80, 199, 0.9);  
 }
-.icon.bxl-javascript {
+.iconc.bxl-javascript {
     transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
     background-color: transparent;
 }
-.icon.bxl-javascript:hover {
+.iconc.bxl-javascript:hover {
     color: #b0bc1e; 
     background-color: #ecf279;  
     box-shadow: 0 0 15px rgba(243, 245, 78, 0.9);
@@ -345,12 +350,13 @@ span
     background-color: #8fbff2;  
     box-shadow: 0 0 15px rgba(118, 169, 236, 0.9);
 }
-.iconn.fi-brands-xd {
+.iconc.fi-brands-xd {
     transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
     background-color: transparent;
     padding: 3px;
+    font-size: 20px;
 }
-.iconn.fi-brands-xd:hover {
+.iconc.fi-brands-xd:hover {
     color: #801074; 
     background-color: #b030b9;  
     box-shadow: 0 0 15px rgba(120, 30, 150, 0.9);
@@ -459,15 +465,27 @@ span
     stroke-linecap: round;
 }
 .path-1{animation: animate-path1 1s 1s linear forwards;}
-.path-2{animation: animate-path12 1s 1s linear forwards;}
+.path-2{animation: animate-path2 1s 1s linear forwards;}
+.path-3{animation: animate-path3 1s 1s linear forwards;}
+.path-4{animation: animate-path4 1s 1s linear forwards;}
 @keyframes animate-path1{
     100%{
         stroke-dashoffset: 100;
     }
 }
-@keyframes animate-path12{
+@keyframes animate-path2{
     100%{
-        stroke-dashoffset: 250;
+        stroke-dashoffset: 180;
+    }
+}
+@keyframes animate-path3{
+    100%{
+        stroke-dashoffset: 150;
+    }
+}
+@keyframes animate-path4{
+    100%{
+        stroke-dashoffset: 90;
     }
 }
 @keyframes showtext{
