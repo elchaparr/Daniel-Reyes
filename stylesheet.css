@@ -15,6 +15,8 @@
     --second-bg-color: #323946;
     --text-color:#fff;
     --main-color:#0ef;
+    --second-color:rgba(245, 238, 238, 0.976);
+
 }
 html
 {
@@ -31,6 +33,7 @@ section
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
+
 .header
 {
     position: fixed;
@@ -69,6 +72,48 @@ section
     text-shadow: 0 0 2rem var(--main-color);
     opacity: 0;
     animation: slideTop 1s ease forwards;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea elementos al inicio */
+        padding: 1rem 5%; /* Reduce el padding */
+    }
+
+    .logo {
+        font-size: 2rem; /* Ajusta el tamaño de la fuente del logo */
+    }
+
+    .navbar {
+        flex-direction: column; /* Navegación en columna */
+        width: 100%; /* Ocupa todo el ancho */
+        margin-top: 1rem; /* Espacio entre el logo y la navegación */
+    }
+
+    .navbar a {
+        font-size: 1.5rem; /* Ajusta el tamaño de la fuente */
+        margin: 1rem 0; /* Espaciado vertical entre enlaces */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        text-align: center; /* Centra el texto */
+        width: 100%; /* Enlaces ocupan todo el ancho */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea elementos al inicio */
+        padding: 1rem 5%; /* Reduce el padding */
+    }
+    .logo {
+        font-size: 1.8rem; /* Tamaño aún más pequeño en pantallas muy pequeñas */
+    }
+
+    .navbar a {
+        font-size: 1.3rem; /* Tamaño de fuente más pequeño */
+        margin: 2rem 0; /* Aumenta el espaciado vertical entre los enlaces */
+    }
 }
 .home{
     display: grid;
@@ -403,14 +448,17 @@ span
 }
 .container {
     display: flex;
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan en pantallas pequeñas */
     justify-content: space-between;
+    padding: 20px; /* Espaciado interno */
 }
 
 .skills-column {
-    width: 48%;
+    flex: 1 1 300px; /* Crece y se encoge, con un mínimo de 300px */
+    margin: 10px; /* Espacio entre columnas */
 }
 .habilidad-bar{
-    width: 400px;
+    width: 100%; /* Hacer que la barra ocupe el 100% del contenedor */
     height: 5px;
     background: #282828;
     border-radius: 2px;
@@ -443,6 +491,17 @@ span
     right: 0;
     transform: translateX(50%) rotate(45deg);
     border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Coloca las columnas en una sola columna en pantallas pequeñas */
+    }
+
+    .skills-column {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        margin: 0; /* Elimina el margen para un mejor ajuste */
+    }
 }
 @keyframes fillbar {
     from{
@@ -503,22 +562,22 @@ span
 .path-4{animation: animate-path4 1s 1s linear forwards;}
 @keyframes animate-path1{
     100%{
-        stroke-dashoffset: 100;
+        stroke-dashoffset: 50;
     }
 }
 @keyframes animate-path2{
     100%{
-        stroke-dashoffset: 180;
+        stroke-dashoffset: 100;
     }
 }
 @keyframes animate-path3{
     100%{
-        stroke-dashoffset: 150;
+        stroke-dashoffset: 90;
     }
 }
 @keyframes animate-path4{
     100%{
-        stroke-dashoffset: 90;
+        stroke-dashoffset: 0;
     }
 }
 @keyframes showtext{
@@ -589,9 +648,10 @@ span
 .timeline-date{
     font-size: 20px;
     font-weight: 800;
-    color: white;
     padding-left: 30px;
     margin: 6px 0 20px;
+    color: var(--second-color);
+    text-shadow: 0 0 10px var(--second-color);
 }
 .timeline-content{
     background-color: var(--bg-color);
@@ -618,13 +678,45 @@ span
     margin: 0 0 10px;
     font-weight: 900;
     color: var(--main-color);
-    text-shadow: 0 0 10px var(--main-color);;
+    text-shadow: 0 0 10px var(--main-color);
 }
 .timeline-content p{
     color: white;
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
+}
+
+@media (max-width: 768px) {
+    .timeline-items {
+        padding: 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .timeline-item {
+        padding-right: 0; /* Quita el padding derecho */
+        padding-left: 0; /* Quita el padding izquierdo */
+        width: 100%; /* Mantiene el ancho completo */
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-right: 0; /* Quita padding para ambos tipos en móviles */
+        padding-left: 0;
+    }
+
+    .timeline-dot {
+        left: calc(50% - 10px); /* Centra el punto en la parte superior */
+    }
+
+    .timeline-date {
+        padding-left: 10px; /* Ajusta el padding para desplazar a la izquierda */
+        text-align: left; /* Alinea el texto a la izquierda */
+        margin-left: 0; /* Elimina margen izquierdo */
+        position: relative; /* Permite ajustar la posición */
+        z-index: 1; /* Asegura que esté por encima de otros elementos */
+        top: -10px; /* Ajusta la posición verticalmente para que esté encima de la línea */
+        font-size: 22px;
+    }
 }
 
 .projects_grid{
@@ -672,7 +764,7 @@ span
 
 .projects_hovers{
     position: absolute;
-    background: #dc143c8c;
+    background: #1dbbf48c;
     top: 0;
     left: 0;
     width: 100%;
@@ -694,4 +786,38 @@ span
 .projects_icon{
     margin-top: 10px;
     font-size: 30px;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
