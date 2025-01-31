@@ -5,26 +5,42 @@ const typed = new Typed('.multiple-text',{
     backDelay: 2000,
     loop: true
 });
-document.querySelectorAll('.projects_items').forEach(item => {
-    item.addEventListener('click', () => {
-        const title = item.getAttribute('data-title');
-        const description = item.getAttribute('data-description');
+// Obtener todos los elementos de los artículos
+const items = document.querySelectorAll('.projects_items');
 
-        document.getElementById('modal-title').innerText = title;
-        document.getElementById('modal-description').innerText = description;
+// Obtener todos los modales
+const modals = document.querySelectorAll('.modal');
 
-        const modal = document.getElementById('modal');
-        modal.style.display = "block";
-    });
+// Obtener los botones de cierre
+const closeButtons = document.querySelectorAll('.close');
+
+// Función para abrir el modal
+function openModal(modalId) {
+  const modal = document.getElementById(modalId);
+  modal.style.display = 'block';
+}
+
+// Función para cerrar el modal
+function closeModal() {
+  modals.forEach(modal => modal.style.display = 'none');
+}
+
+// Asignar evento de click a cada artículo
+items.forEach(item => {
+  item.addEventListener('click', function() {
+    const modalId = item.getAttribute('data-modal');
+    openModal(modalId);
+  });
 });
 
-document.querySelector('.close').addEventListener('click', () => {
-    document.getElementById('modal').style.display = "none";
+// Asignar evento de click a cada botón de cierre
+closeButtons.forEach(button => {
+  button.addEventListener('click', closeModal);
 });
 
-window.addEventListener('click', (event) => {
-    const modal = document.getElementById('modal');
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
+// Cerrar el modal si se hace click fuera de la ventana modal
+window.addEventListener('click', function(event) {
+  if (event.target.classList.contains('modal')) {
+    closeModal();
+  }
 });
