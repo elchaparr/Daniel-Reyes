@@ -149,10 +149,43 @@ section
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
 }
-span
-{
+/* Estilo general para todos los <span> */
+span {
     color: var(--main-color);
+    text-shadow: 0 0 10px var(--main-color);
 }
+
+/* Estilo específico para los <span> con la clase 'subheading' */
+.subheading {
+    font-size: 3rem;  /* Tamaño de fuente específico para estos spans */
+    font-weight: bold;
+}
+
+/* Estilo para los <h2> con la clase 'headingg' */
+.headingg {
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Ejemplo de estilo para un <h2> con un texto diferente (como Proyectos) */
+.headingg span[data-es="Mis"] {
+    color: var(--project-color); /* color diferente para "Proyectos" */
+    text-shadow: 0 0 10px var(--text-color);
+}
+.headingg span[data-es="Experiencia"] {
+    color: var(--project-color); /* color diferente para "Proyectos" */
+    text-shadow: 0 0 10px var(--text-color);
+}
+.headingg span[data-es="Sobre"] {
+    color: var(--project-color); /* color diferente para "Proyectos" */
+    text-shadow: 0 0 10px var(--text-color);
+}
+/* Si deseas estilos diferentes para el idioma en inglés, podrías hacer algo como esto */
+html[lang="en"] .headingg span {
+    font-style: italic; /* Estilo para los spans en inglés */
+}
+
 .home-content h1{
     font-size: 5.6rem;
     font-weight: 700;
@@ -205,7 +238,7 @@ span
 .btn:hover{
     box-shadow: none;
 }
-#translate-button {
+#language-toggle {
     background-color: transparent; /* Fondo transparente */
     border: none; /* Sin borde */
     cursor: pointer; /* Cambia el cursor al pasar el mouse */
@@ -214,7 +247,7 @@ span
     padding: 10px; /* Espaciado interno */
 }
 
-#translate-button:hover {
+#language-toggle:hover {
     color: #ff9800; /* Cambia el color al pasar el mouse */
 }
 
@@ -236,10 +269,7 @@ span
     0 0 50px var(--main-color),
     0 0 100px var(--main-color);
 }
-.heading{
-    text-align: center;
-    font-size: 4.5rem;
-}
+
 .about-content h2{
     text-align: left;
     line-height: 1.2;
@@ -258,6 +288,7 @@ span
     text-align: center;
     font-size: 4.5rem;
     background: url(assets/img/fondo.png);
+    text-shadow: 0 0 10px var(--text-color);
 }
 .heading1{
     text-align:center;

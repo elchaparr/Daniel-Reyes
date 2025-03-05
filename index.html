@@ -15,14 +15,14 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Portafolio</a>
+        <a href="#" class="logo" data-es="Portafolio" data-en="Portfolio"></a>
         <nav class="navbar">
-            <a href="#home" style="--i:1" class="active">Home</a>
-            <a href="#about" style="--i:2">Sobre mi</a>
-            <a href="#skill" style="--i:3">Skill</a>
-            <a href="#experiencia" style="--i:4">Experiencia</a>
-            <a href="#proyectos" style="--i:4">Proyectos</a>
-            <button id="translate-button">
+            <a href="#home" style="--i:1" class="active" data-es="Home" data-en="Home"></a>
+            <a href="#about" style="--i:2" data-es="Sobre mi" data-en="About me"></a>
+            <a href="#skill" style="--i:3" data-es="Skill" data-en="Skills"></a>
+            <a href="#experiencia" style="--i:4" data-es="Experiencia" data-en="Experience"></a>
+            <a href="#proyectos" style="--i:4" data-es="Proyectos" data-en="Projects"></a>
+            <button id="language-toggle">
                 <i class="bx bx-world"></i> <!-- Cambia el icono según tu preferencia -->
             </button>
         </nav>
@@ -30,10 +30,10 @@
 
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hola, Que tal soy!!</h3>
+            <h3 data-es="Hola, Que tal soy!!" data-en="Hi, How it goes?"></h3>
             <h1>Daniel Reyes</h1>
-            <h3>Soy <span class="multiple-text"></span></h3>
-            <p>Joven discapacitado que le gusta diseñar y programar.
+            <h3><span class="multiple-text"></span></h3>
+            <p data-es="Joven discapacitado que le gusta diseñar y programar." data-en="Young disabled man who likes to design and program.">
                 
             </p>
             <div class="social-media">
@@ -42,7 +42,7 @@
                 <a href="https://wa.me//528713337397" style="--i:8"><i class='bx bxl-whatsapp'></i></a>
                 <a href="mailto:osda2403@outlook.es" style="--i:9"><i class='bx bx-envelope'></i></a>
             </div>
-            <a href="assets/doc/CV Oscar Daniel (1).pdf" target="_blank" class="btn">Mirar mi CV</a>
+            <a href="assets/doc/CV Oscar Daniel (1).pdf" target="_blank" class="btn" data-es="Mirar mi CV" data-en="Look at my resume"></a>
         </div>
         
         <div class="home-img">
@@ -56,19 +56,38 @@
             <img src="assets/img/dany.jpg" alt="">
         </div>
         <div class="about-content">
-            <h2 class="heading">Sobre <span>Mi</span></h2>
-            <p style="text-align: justify; line-height: 1.6;"><strong>¡Hola! Soy Daniel Reyes</strong>, un desarrollador web apasionado con un año de experiencia en la creación de sitios web y aplicaciones dinámicas. A lo largo de mi carrera, he desarrollado habilidades en tecnologías como HTML, CSS, JavaScript, y frameworks como React y Vue.js.</p>
-
-            <p style="text-align: justify; line-height: 1.6;">Mi pasión por la tecnología y la programación me ha permitido superar cualquier desafío que se me presente, y siempre estoy buscando aprender y mejorar mis habilidades. A pesar de tener una discapacidad motriz y ser una persona de estatura baja, esto nunca ha sido un obstáculo para mí. Al contrario, me ha enseñado a ser resiliente, creativo y a encontrar soluciones innovadoras a los problemas.</p>
-                
-            <p style="text-align: justify; line-height: 1.6;">Estoy comprometido con la accesibilidad y la inclusión en la web, y creo firmemente en crear experiencias digitales que sean accesibles para todos, independientemente de sus habilidades. Si estás buscando a un desarrollador web dedicado y entusiasta, ¡me encantaría conectar contigo!
+            <h2 class="headingg">
+                <span data-es="Sobre" data-en="About"></span>
+                <span data-es="Mi" data-en="Me"></span>
+            </h2>
+            <p style="text-align: justify; line-height: 1.6;" 
+                data-es="¡Hola! Soy Daniel Reyes un desarrollador web apasionado con un año de experiencia en la creación de sitios web y aplicaciones dinámicas."
+                data-en="Hello! I'm Daniel Reyes a passionate web developer with one year of experience in creating websites and dynamic applications.">
             </p>
-            
+            <p style="text-align: justify; line-height: 1.6;" data-es="Mi pasión por la tecnología y la programación me ha permitido superar cualquier desafío que se me presente, y siempre estoy buscando aprender y mejorar mis habilidades."
+                data-en="My passion for technology and programming has allowed me to overcome any challenge that comes my way, and I am always looking to learn and improve my skills.">
+            </p>
+
+            <p style="text-align: justify; line-height: 1.6;" data-es="A pesar de tener una discapacidad motriz y ser una persona de estatura baja, esto nunca ha sido un obstáculo para mí."
+                    data-en="Despite having a motor disability and being a short person, this has never been an obstacle for me.">
+            </p>
+
+            <p style="text-align: justify; line-height: 1.6;" data-es="Estoy comprometido con la accesibilidad y la inclusión en la web, y creo firmemente en crear experiencias digitales que sean accesibles para todos, independientemente de sus habilidades."
+                    data-en="I am committed to web accessibility and inclusion, and I firmly believe in creating digital experiences that are accessible to everyone, regardless of their abilities.">
+            </p>
+
+            <p style="text-align: justify; line-height: 1.6;" data-es="Si estás buscando a un desarrollador web dedicado y entusiasta, ¡me encantaría conectar contigo!"
+                    data-en="If you're looking for a dedicated and enthusiastic web developer, I'd love to connect with you!">
+            </p>
+                        
         </div>
     </section>
     
     <section class="skill" id="skill">
-        <h2 class="headingg">Mis <span>Habilidades</span></h2>
+        <h2 class="headingg">
+            <span data-es="Mis" data-en="My"></span>
+            <span data-es="Habilidades" data-en="Skills"></span>
+        </h2>
         <br>
         <br>
         <br>
@@ -78,7 +97,7 @@
         <br>
         <br>
         <br>
-        <h1 class="heading1">Technical skills</h1>
+        <h1 class="heading1" data-es="Habilidades técnicas" data-en="Technical skills"></h1>
         <br>
         <br>
         <br>
@@ -192,7 +211,7 @@
         <br>
         <br>
         <br>
-        <h1 class="heading1">Professional skills</h1>
+        <h1 class="heading1" data-es="Habilidades profesionales" data-en="Professional skills"></h1>
         <br>
         <br>
         <br>
@@ -206,7 +225,7 @@
                     <circle class="path path-1" cx="100" cy="100" r="80"></circle>
                 </svg>
                 <div class="porcentage">90%</div>
-                <div class="text">Trabajo en equipo</div>
+                <div class="text" data-es="Trabajo en equipo" data-en="Teamwork"></div>
             </div>
 
             <div class="radial-bar">
@@ -215,7 +234,7 @@
                     <circle class="path path-2" cx="100" cy="100" r="80"></circle>
                 </svg>
                 <div class="porcentage">80%</div>
-                <div class="text">Comunicacion</div>
+                <div class="text" data-es="Comunicacion" data-en="Communication"></div>
             </div>
 
             <div class="radial-bar">
@@ -224,7 +243,7 @@
                     <circle class="path path-3" cx="100" cy="100" r="80"></circle>
                 </svg>
                 <div class="porcentage">85%</div>
-                <div class="text">Adaptabilidad</div>
+                <div class="text" data-es="Adaptabilidad" data-en="Adaptability"></div>
             </div>
 
             <div class="radial-bar">
@@ -233,13 +252,16 @@
                     <circle class="path path-4" cx="100" cy="100" r="80"></circle>
                 </svg>
                 <div class="porcentage">100%</div>
-                <div class="text">Responsable</div>
+                <div class="text" data-es="Responsable" data-en="Responsible"></div>
             </div>
         </div>
     </section>
 
     <section class="experiencia" id="experiencia">
-        <h2 class="headingg">Experiencia <span>Laboral</span></h2>
+        <h2 class="headingg">
+            <span data-es="Experiencia" data-en="Experience"></span>
+            <span data-es="Laboral" data-en="Work"></span>
+        </h2>
         <br>
         <br>
         <br>
@@ -252,8 +274,8 @@
                     <div class="timeline-date">Sept, 2020- Dic,   2020</div>
                     <div class="timeline-content">
                         <h3>Vivendo</h3>
-                        <p>*Crear vista y hacer funcional para su Plataforma</p>
-                        <p>*Gestión de servicios con aws</p>
+                        <p data-es="*Crear vista y hacer funcional para su Plataforma" data-en="*Create view and make functional for your Platform"></p>
+                        <p data-es="*Gestión de servicios con aws" data-en="*Service management with AWS"></p>
                     </div>
             </div>
 
@@ -262,10 +284,10 @@
                     <div class="timeline-date">Abr, 2022- Jun,    2022</div>
                     <div class="timeline-content">
                         <h3>SILAG</h3>
-                        <p>*Creacion de pagina para venta de Paneles Solares.</p>
-                        <p>*Gestión de servicios con aws</p>
-                        <p>*Adquisición de requerimientos a partir de recibo de luz</p>
-                        <p>*Gestión y creación de bases de datos.</p>
+                        <p data-es="*Creacion de pagina para venta de Paneles Solares" data-en="*Creation of a page for the sale of Solar Panels"></p>
+                        <p data-es="*Gestión de servicios con aws" data-en="*Service management with AWS"></p>
+                        <p data-es="*Adquisición de requerimientos a partir de recibo de luz" data-en="*Acquisition of requirements from electricity receipt"></p>
+                        <p data-es="*Gestión y creación de bases de datos" data-en="*Management and creation of databases"></p>
                     </div>
                 
             </div>
@@ -275,11 +297,11 @@
                     <div class="timeline-date">Jun, 2023- Sept,   2023</div>
                     <div class="timeline-content">
                         <h3>Jarsa</h3>
-                        <p>*Crear nuevos campos a los modulos</p>
-                        <p>*Modificar campos de modulos ya creados</p>
-                        <p>*Trabajar con metodología SCRUM</p>
-                        <p>*Explicar los campos creados</p>
-                        <p>*Creación de reportes</p>
+                        <p data-es="*Crear nuevos campos a los modulos" data-en="*Create new fields to the modules"></p>
+                        <p data-es="*Modificar campos de modulos ya creados" data-en="*Modify fields of already created modules"></p>
+                        <p data-es="*Trabajar con metodología SCRUM" data-en="*Work with SCRUM methodology"></p>
+                        <p data-es="*Explicar los campos creados" data-en="*Explain the fields created"></p>
+                        <p data-es="*Creación de reportes" data-en="*Creation of reports"></p>
                     </div>
                 
             </div>
@@ -289,11 +311,11 @@
                     <div class="timeline-date">Nov, 2023- Ene,    2024</div>
                     <div class="timeline-content">
                         <h3>DSW System</h3>
-                        <p>*Modificar módulos ya creados </p>
-                        <p>*Crear nuevo modulo en su plataforma</p>
-                        <p>*Gestión y creación de bases de datos </p>
-                        <p>*Dar y denegar permisos a usuarios</p>
-                        <p>*Creación de reportes</p>
+                        <p data-es="*Modificar módulos ya creados" data-en="*Modify already created modules"></p>
+                        <p data-es="*Crear nuevo modulo en su plataforma" data-en="*Create a new module on your platform"></p>
+                        <p data-es="*Gestión y creación de bases de datos" data-en="*Management and creation of databases"></p>
+                        <p data-es="*Dar y denegar permisos a usuarios" data-en="*Give and deny permissions to users"></p>
+                        <p data-es="*Creación de reportes" data-en="*Creation of reports"></p>
                     </div>
                 
             </div>
@@ -303,13 +325,13 @@
                     <div class="timeline-date">Mayo, 2024- Actual</div>
                     <div class="timeline-content">
                         <h3>DIF</h3>
-                        <p>*Reparacion de impresoras</p>
-                        <p>*Instalacion de office</p>
-                        <p>*Reparacion de computadoras </p>
-                        <p>*Manejo de office</p>
-                        <p>*Descargar y actualizar drives</p>
-                        <p>*Instalar sistemas operativos</p>
-                        <p>*Captura de datos</p>
+                        <p data-es="*Reparacion de impresoras" data-en="*Printer repair"></p>
+                        <p data-es="*Instalacion de office" data-en="*Office installation"></p>
+                        <p data-es="*Reparacion de computadoras" data-en="*Computer repair"></p>
+                        <p data-es="*Manejo de office" data-en="*Office management"></p>
+                        <p data-es="*Descargar y actualizar drives" data-en="*Download and update drives"></p>
+                        <p data-es="*Instalar sistemas operativos" data-en="*Install operating systems"></p>
+                        <p data-es="*Captura de datos" data-en="*Data capture"></p>
                     </div>
                 
             </div>
@@ -317,7 +339,10 @@
     </section>
     
     <section class="projects" id="proyectos">
-        <h2 class="headingg">Mis <span>Proyectos</span></h2>
+        <h2 class="headingg">
+            <span data-es="Mis" data-en="My"></span>
+            <span data-es="Proyectos" data-en="Projects"></span>
+        </h2>
         <br>
         <br>
         <br>
@@ -333,7 +358,7 @@
                    <article class="projects_items" data-modal="modal1">
                     <img src="assets/img/carro.jpg" class="projects_img">
                     <div class="projects_hovers">
-                        <h2 class="projects_title">Videojuego</h2>
+                        <h2 class="projects_title" data-es="Videojuego" data-en="Video game"></h2>
                         <i class=" far fa-file-alt projects_icon"></i>
                         </h2>
                     </div>
@@ -342,7 +367,7 @@
                    <article class="projects_items" data-modal="modal2">
                     <img src="assets/img/Odoo_14.png" class="projects_img">
                     <div class="projects_hovers">
-                        <h2 class="projects_title">Sistema ERP</h2>
+                        <h2 class="projects_title" data-es="Sistema ERP" data-en="ERP system"></h2>
                         <i class=" far fa-file-alt projects_icon"></i>
                         </h2>
                     </div>
@@ -351,7 +376,7 @@
                    <article class="projects_items" data-modal="modal3">
                     <img src="assets/img/pagina.jpeg" class="projects_img">
                     <div class="projects_hovers">
-                        <h2 class="projects_title">Pagina web</h2>
+                        <h2 class="projects_title" data-es="Pagina web" data-en="Web page"></h2>
                         <i class=" far fa-file-alt projects_icon"></i>
                         </h2>
                     </div>
@@ -380,33 +405,69 @@
             <div id="modal1" class="modal">
                 <div class="modal_content">
                     <span class="close">&times;</span>
-                    <h2>Videojuego</h2>
+                    <h2 data-es="Videojuego" data-en="Video game"></h2>
                     <br>
-                    <p>Se trata de un juego desarrollado en C# utilizando Windows Forms. El objetivo del juego es controlar un coche para evitar 
-                        otros coches que se aproximan, mientras se recogen monedas que aparecen en el camino. Cuando el jugador pierde, el juego guarda 
-                        la cantidad de monedas recogidas junto con el nombre del jugador en una base de datos para su posterior visualización y seguimiento.</p>
+                    <p data-es="Se trata de un juego desarrollado en C# utilizando Windows Forms. El objetivo del juego es controlar un coche para evitar 
+                    otros coches que se aproximan, mientras se recogen monedas que aparecen en el camino. Cuando el jugador pierde, el juego guarda 
+                    la cantidad de monedas recogidas junto con el nombre del jugador en una base de datos para su posterior visualización y seguimiento." 
+                    data-en="This is a game developed in C# using Windows Forms. The objective of the game is to control a car to avoid other oncoming cars, 
+                    while collecting coins that appear along the way. When the player loses, the game saves the amount of coins collected along with the player's 
+                    name in a database for later viewing and tracking."></p>
                     <br>
                     <br>
                     <br>
                     <img src="assets/img/carro.jpg" style="width: 100%; max-width: 400px; margin-bottom: 20px;">
                     <br>
                     <br>
-                    <h2>Características</h2>
+                    <h2 data-es="Características" data-en="Characteristics"></h2>
                     <br>
-                        <p>*Movimiento del carrito : utilice las teclas de flecha para mover el carrito hacia la izquierda o hacia la derecha.</p>
-                        <p>*Evita los obstáculos : Evita chocar con los coches que se mueven hacia ti.</p>
-                        <p>*Recoge monedas : a medida que evites obstáculos, podrás recolectar monedas que aumentarán tu puntuación.</p>
-                        <p>*Base de datos : Cuando el jugador pierde, su nombre y las monedas recolectadas se guardan en una base de datos para realizar un seguimiento de las mejores evaluaciones.
-                    </p>
-                    <a href="https://github.com/elchaparr/car-game" target="_blank" class="btn">Codigo del programa</a>
+                        <p data-es="*Movimiento del carrito : utilice las teclas de flecha para mover el carrito hacia la izquierda o hacia la derecha." 
+                        data-en="*Cart Movement: Use the arrow keys to move the cart left or right."></p>
+                        <p data-es="*Evita los obstáculos : Evita chocar con los coches que se mueven hacia ti."
+                        data-en="*Avoid obstacles: Avoid colliding with cars moving towards you."></p>
+                        <p data-es="*Recoge monedas : a medida que evites obstáculos, podrás recolectar monedas que aumentarán tu puntuación."
+                        data-en="*Collect coins: As you avoid obstacles, you will be able to collect coins that will increase your score."></p>
+                        <p data-es="*Base de datos : Cuando el jugador pierde, su nombre y las monedas recolectadas se guardan en una base de datos para realizar un seguimiento de las mejores evaluaciones."
+                        data-en="*Database: When the player loses, his name and the coins collected are saved in a database to keep track of the best evaluations."></p>
+                    <a href="https://github.com/elchaparr/car-game" target="_blank" class="btn" data-es="Codigo del programa" data-en="Program code"></a>
                 </div>
             </div>
               
             <div id="modal2" class="modal">
                 <div class="modal_content">
                     <span class="close">&times;</span>
-                    <h2>Sistema ERP</h2>
-                    <p>Aquí van los detalles del proyecto 2...</p>
+                    <h2 data-es="Sistema ERP" data-en="ERP system"></h2>
+                    <br>
+                    <p data-es="Trabajé como desarrollador en el proyecto de implementación y personalización del sistema ERP Odoo 
+                    para Jarsa. Mi principal responsabilidad fue adaptar y modificar diversos módulos de Odoo para 
+                    satisfacer los requisitos específicos del cliente, asegurando que las soluciones fueran efectivas y alineadas con sus procesos 
+                    de negocio."
+                    data-en="I worked as developer on the Odoo ERP system implementation and customization project 
+                    for Jarsa. My main responsibility was to adapt and modify various Odoo modules to 
+                    meet the client's specific requirements, ensuring that the solutions were effective and aligned with their 
+                    business processes."></p>
+                        <br>
+                        <h3 data-es="Responsabilidades y logros:" data-en="Responsibilities and achievements:"></h3>
+                        <br>
+                        <p data-es="Modificación y personalización de módulos: Personalicé varios módulos de Odoo, tales como Ventas, Compras, 
+                        Inventarios, etc, para ajustarlos a las necesidades del cliente. Esto incluyó cambios en la 
+                        interfaz de usuario, la creación de nuevos campos y la modificación de flujos de trabajo."
+                        data-en="Module Modification and Customization: I customized several Odoo modules, such as Sales, Purchases, 
+                        Inventories, etc., to fit the client's needs. This included changes to the user 
+                        interface, creation of new fields, and modification of workflows."></p>
+                        <br>
+                        <p data-es="Desarrollo de funcionalidades específicas: Desarrollé nuevas funcionalidades dentro de Odoo utilizando Python y XML para 
+                        mejorar la eficiencia operativa del cliente,[describir ejemplos específicos, como informes personalizados, integración
+                        con otros sistemas, o nuevas funcionalidades específicas]."
+                        data-en="Developing specific functionalities: I developed new functionalities within Odoo using Python and XML to 
+                        improve the client's operational efficiency, such as [describe specific examples, such as custom reports, integration
+                        with other systems, or new specific functionalities]."></p>
+                        <br>
+                         <p data-es="Herramientas utilizadas:" data-en="Tools used:"></p>
+                         <br>
+                         <p data-es="*Odoo (varias versiones: 12, 13, 14, etc.)" data-en="*Odoo (various versions: 12, 13, 14, etc.)"></p>
+                         <p data-es="*Python, JavaScript, XML" data-en="*Python, JavaScript, XML"></p>
+                         <p data-es="*Git/GitHub (para control de versiones)" data-en="*Git/GitHub (for version control)"></p>
                     <br>
                     <br>
                     <br>
@@ -423,6 +484,7 @@
                     <br>
                     <br>
                     <img src="assets/img/pagina.jpeg" style="width: 100%; max-width: 400px; margin-bottom: 20px;">
+                    <a href="https://github.com/elchaparr/paginatics" target="_blank" class="btn" data-es="Codigo del programa" data-en="Program code"></a>
                 </div>
             </div>
               
