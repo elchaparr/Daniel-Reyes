@@ -649,7 +649,7 @@ html[lang="en"] .headingg span {
     animation: showtext 0.5 1s linear forwards;
 }
 .timeline-items{
-    max-width: 1200px;
+    max-width: 1500px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -709,7 +709,6 @@ html[lang="en"] .headingg span {
     height: 275px; /* Fija la altura para todos los contenedores */
     box-sizing: border-box;
     overflow: hidden;
-    
 }
 .timeline-content:hover{
     transform: scale(1.05);
